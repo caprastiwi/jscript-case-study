@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript - Mini Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+  </head>
+  <body>
+    <h1>Case Study 1</h1>
+    <p>Fungsi Faktorial</p>
+    
+    <script>
+      function factorial(n) {
+        let result = 1;
+        
+        if (n > 1) {
+          for (let i = 1; i <= n; i++) {
+            result = result * i;
+          }
+          return result;
+        } else {
+          return "n has to be positive";
+        }
+      }
+      
+      console.log(factorial(5));
+    </script>
+  </body>
+</html>
